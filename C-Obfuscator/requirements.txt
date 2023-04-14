@@ -1,0 +1,4 @@
+pycparser
+pyyaml
+pydantic
+pydantic_yaml

@@ -1,0 +1,104 @@
+global_options: []
+global_params:
+  func: OBF_FUNC
+
+templates:
+  structured-random-function-base:
+    [ "--Transform=RandomFuns", "--RandomFunsName={func}", "--RandomFunsFunctionCount=1",
+      "--RandomFunsTrace=0",
+      "--RandomFunsInputSize=1", "--RandomFunsOutputSize=1",
+      "--RandomFunsLocalStaticStateSize=2",
+      # "--RandomFunsLocalStaticStateSize=0", "--RandomFunsLocalDynamicStateSize=0",
+      # "--RandomFunsGlobalStaticStateSize=0", "--RandomFunsGlobalDynamicStateSize=0",
+      "--RandomFunsCodeSize={code_size}", "--RandomFunsLoopSize=5",
+      "--RandomFunsBoolSize=1", 
+      "--RandomFunsType={func_type}",
+      "--RandomFunsFailureKind={failure_kind}",
+      "--RandomFunsInputKind=argv",
+      "--RandomFunsInputType={input_type}",
+      "--RandomFunsDummyFailure=false",
+      "--RandomFunsActivationCodeCheckCount=0", "--RandomFunsTimeCheckCount=0", "--RandomFunsSecurityCheckCount=0", "--RandomFunsPasswordCheckCount=0",
+      "--RandomFunsBasicBlockSize={basic_block_size}",
+      "--RandomFunsForBound=constant",
+      "--RandomFunsOperators=MinusA,PlusA,Mult,Div,Mod,Lt,Gt,Le,Ge,Eq,Ne",
+      "--RandomFunsPointTest=false",
+      "--RandomFunsControlStructures={control_structures}",
+      "--Verbosity=5"]
+  
+  sized-random-function-base:
+    [ "--Transform=RandomFuns", "--RandomFunsName={func}", "--RandomFunsFunctionCount=1",
+      "--RandomFunsTrace=0",
+      "--RandomFunsInputSize=1", "--RandomFunsOutputSize=1",
+      "--RandomFunsLocalStaticStateSize=2",
+      # "--RandomFunsLocalStaticStateSize=0", "--RandomFunsLocalDynamicStateSize=0",
+      # "--RandomFunsGlobalStaticStateSize=0", "--RandomFunsGlobalDynamicStateSize=0",
+      "--RandomFunsCodeSize={code_size}", "--RandomFunsLoopSize=5",
+      "--RandomFunsBoolSize=1", 
+      "--RandomFunsType={func_type}",
+      "--RandomFunsFailureKind={failure_kind}",
+      "--RandomFunsInputKind=argv",
+      "--RandomFunsInputType={input_type}",
+      "--RandomFunsDummyFailure=false",
+      "--RandomFunsActivationCodeCheckCount=0", "--RandomFunsTimeCheckCount=0", "--RandomFunsSecurityCheckCount=0", "--RandomFunsPasswordCheckCount=0",
+      "--RandomFunsBasicBlockSize={basic_block_size}",
+      "--RandomFunsForBound=constant",
+      "--RandomFunsOperators=MinusA,PlusA,Mult,Div,Mod,Lt,Gt,Le,Ge,Eq,Ne",
+      "--RandomFunsPointTest=false",
+      "--Verbosity=5"]
+
+obfuscations:
+  structured-random-function:
+    if-1:
+      func_type: int
+      failure_kind: message
+      input_type: int
+      basic_block_size: 2
+      code_size: 10
+      control_structures: "(for ((bb 4) (if ((bb 3)) ((bb 2)))))"
+    if-3:
+      func_type: int
+      failure_kind: message
+      input_type: int
+      basic_block_size: 2
+      code_size: 10
+      control_structures: "(for ((bb 4) (if ((bb 2) (if ((bb 1)) ((bb 2)))) (if ((bb 3)) ((bb 2))))))"
+    if-5:
+      func_type: int
+      failure_kind: message
+      input_type: int
+      basic_block_size: 2
+      code_size: 10
+      control_structures: "(for ((bb 4) (if ((bb 2) (if ((bb 1)) ((if ((bb 2)) ((bb 2)))))) (if ((bb 1)) ((if ((bb 1)) ((bb 2))))))))"
+  
+  sized-random-function:
+    5:
+      func_type: int
+      failure_kind: message
+      input_type: int
+      basic_block_size: 2
+      code_size: 5
+    10:
+      func_type: int
+      failure_kind: message
+      input_type: int
+      basic_block_size: 2
+      code_size: 10
+    15:
+      func_type: int
+      failure_kind: message
+      input_type: int
+      basic_block_size: 2
+      code_size: 15
+    20:
+      func_type: int
+      failure_kind: message
+      input_type: int
+      basic_block_size: 2
+      code_size: 20
+    30:
+      func_type: int
+      failure_kind: message
+      input_type: int
+      basic_block_size: 2
+      code_size: 30
+

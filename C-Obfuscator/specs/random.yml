@@ -1,0 +1,6 @@
+name: random
+tigress: _tigress_random.yml
+
+variants:
+  - [sized-random-function]
+  # - [structured-random-function]

@@ -1,0 +1,94 @@
+global_options: ["--Seed=1"]
+global_params:
+  func: OBF_FUNC
+  cleanup_kinds: removeUnusedFunctions
+  num_opaques: 2
+
+templates:
+  flatten-base:
+    ["--Transform=Flatten", "--FlattenSplitBasicBlocks={split_basic_blocks}", "--Functions={func}",
+                            "--FlattenDispatch={dispatch}",
+                            "--FlattenNumberOfBlocksPerFunction={num_block_per_func}",
+                            "--FlattenConditionalKinds={conditional_kinds}",
+                            "--FlattenRandomizeBlocks={randomize_blocks}",
+                            "--FlattenObfuscateNext={obfuscate_next}",
+        "--Transform=CleanUp", "--CleanUpKinds={cleanup_kinds}"]
+
+  deadcode-base:
+    ["--Transform=InitEntropy", "--Functions={func}", "--InitEntropyKinds=vars",
+        "--Transform=InitOpaque", "--Functions={func}", "--InitOpaqueCount={num_opaques}", "--InitOpaqueStructs={opaque_structs}",
+        # "--Transform=UpdateOpaque", "--Functions={func}",
+        "--Transform=AddOpaque", "--Functions={func}", "--AddOpaqueKinds={opaque_kinds}", "--AddOpaqueCount={num_opaque_per_function}", "--AddOpaqueStructs={opaque_structs}",
+        "--Transform=CleanUp", "--CleanUpKinds={cleanup_kinds}"]
+
+  block-fission-base:
+    ["--Transform=Flatten", "--FlattenSplitBasicBlocks=true", "--Functions={func}",
+        "--Transform=InitEntropy", "--Functions={func}", "--InitEntropyKinds=vars",
+        "--Transform=InitOpaque", "--Functions={func}", "--InitOpaqueCount={num_opaques}", "--InitOpaqueStructs={opaque_structs}",
+        "--Transform=AddOpaque", "--Functions={func}", "--AddOpaqueKinds={opaque_kinds}", "--AddOpaqueCount={num_opaque_per_function}", "--AddOpaqueStructs={opaque_structs}",
+        "--Transform=CleanUp", "--CleanUpKinds={cleanup_kinds}"]
+
+obfuscations:
+  flatten:
+    switch:
+      dispatch: switch
+      num_block_per_func: 1
+      split_basic_blocks: true
+      randomize_blocks: true
+      obfuscate_next: false
+      conditional_kinds: branch
+    goto:
+      dispatch: goto
+      num_block_per_func: 1
+      split_basic_blocks: true
+      randomize_blocks: true
+      obfuscate_next: false
+      conditional_kinds: branch
+    indirect-goto:
+      dispatch: indirect
+      num_block_per_func: 1
+      split_basic_blocks: true
+      randomize_blocks: true
+      obfuscate_next: false
+      conditional_kinds: branch
+    call:
+      dispatch: call
+      num_block_per_func: 1
+      split_basic_blocks: true
+      randomize_blocks: true
+      obfuscate_next: false
+      conditional_kinds: branch
+  
+  deadcode:
+    call:
+      num_opaque_per_function: 2
+      opaque_structs: env,list # list, array, input, env, *
+      opaque_kinds: call
+    
+    bug:
+      num_opaque_per_function: 2
+      opaque_structs: env,list # list, array, input, env, *
+      opaque_kinds: bug
+    
+    true:
+      num_opaque_per_function: 2
+      opaque_structs: env,list # list, array, input, env, *
+      opaque_kinds: true
+    
+    # junk:
+    #   num_opaque_per_function: 2
+    #   opaque_structs: env,list # list, array, input, env, *
+    #   opaque_kinds: junk
+    
+    # question:
+    #   num_opaque_per_function: 2
+    #   opaque_structs: env,list # list, array, input, env, *
+    #   opaque_kinds: question
+  
+  block-fission:
+    default:
+      num_opaque_per_function: 2
+      opaque_structs: env,list # list, array, input, env, *
+      opaque_kinds: true
+      
+

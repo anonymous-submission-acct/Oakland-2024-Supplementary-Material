@@ -1,0 +1,442 @@
+{
+  "obfuscation_count": {
+    "('block-fission', 'block-fission')": 0,
+    "('block-fission', 'deadcode')": 0,
+    "('block-fission', 'flatten')": 0,
+    "('deadcode', 'block-fission')": 0,
+    "('deadcode', 'deadcode')": 0,
+    "('deadcode', 'flatten')": 0,
+    "('flatten', 'block-fission')": 0,
+    "('flatten', 'deadcode')": 0,
+    "('flatten', 'flatten')": 2,
+    "('irrelevant-code', 'block-fission')": 0,
+    "('irrelevant-code', 'deadcode')": 0,
+    "('irrelevant-code', 'flatten')": 5,
+    "('irrelevant-code', 'irrelevant-code')": 2,
+    "('irrelevant-code', 'loop-fission')": 7,
+    "('irrelevant-code', 'loop-unroll')": 3,
+    "('loop-fission', 'block-fission')": 0,
+    "('loop-fission', 'deadcode')": 0,
+    "('loop-fission', 'flatten')": 8,
+    "('loop-fission', 'irrelevant-code')": 4,
+    "('loop-fission', 'loop-fission')": 15,
+    "('loop-fission', 'loop-unroll')": 14,
+    "('loop-unroll', 'block-fission')": 0,
+    "('loop-unroll', 'deadcode')": 0,
+    "('loop-unroll', 'flatten')": 7,
+    "('loop-unroll', 'irrelevant-code')": 4,
+    "('loop-unroll', 'loop-fission')": 14,
+    "('loop-unroll', 'loop-unroll')": 10
+  },
+  "failed_obfuscation_count": {
+    "('irrelevant-code', 'deadcode')": 11,
+    "('deadcode', 'block-fission')": 16,
+    "('loop-fission', 'block-fission')": 10,
+    "('flatten', 'block-fission')": 11,
+    "('flatten', 'flatten')": 7,
+    "('deadcode', 'deadcode')": 11,
+    "('irrelevant-code', 'block-fission')": 9,
+    "('loop-unroll', 'block-fission')": 9,
+    "('flatten', 'deadcode')": 15,
+    "('block-fission', 'deadcode')": 14,
+    "('deadcode', 'flatten')": 12,
+    "('block-fission', 'flatten')": 7,
+    "('loop-unroll', 'deadcode')": 13,
+    "('loop-fission', 'deadcode')": 9,
+    "('irrelevant-code', 'flatten')": 5,
+    "('block-fission', 'block-fission')": 13
+  },
+  "obfuscation_variant_count": {
+    "flatten": {
+      "call": 5,
+      "indirect-goto": 6,
+      "goto": 5,
+      "switch": 8
+    }
+  },
+  "detailed_config": {
+    "16b-1-1-0-0-dc-1-1-0-000.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "16b-1-1-0-0-dc-2-1-1-000.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "16b-1-1-0-0-dc-2-2-0-000.c": [
+      "loop-unroll",
+      "flatten:call"
+    ],
+    "16b-1-1-1-0-dc-1-1-0-000.c": [
+      "loop-fission",
+      "flatten:indirect-goto"
+    ],
+    "16b-1-1-1-1-dc-1-1-0-000.c": [
+      "loop-fission",
+      "flatten:call"
+    ],
+    "16b-1-2-0-0-dc-2-1-1-000.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "16b-1-2-0-0-dc-2-2-0-000.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "16b-1-2-1-1-dc-1-1-0-000.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "1b-1-1-0-0-dc-1-0-0-000.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-1-1-0-0-dc-1-0-1-000.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "1b-1-1-0-0-dc-2-0-1-000.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "1b-1-1-0-0-dc-2-0-2-000.c": [
+      "loop-unroll",
+      "flatten:goto"
+    ],
+    "1b-1-1-1-0-dc-0-0-0-000.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "1b-1-1-1-0-dc-1-0-1-000.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "1b-1-1-1-1-eq127-0-0-0-000.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-1-1-1-1-eqsum127-1-0-1-000.c": [
+      "loop-fission",
+      "flatten:goto"
+    ],
+    "1b-1-1-1-1-gt127-0-0-0-000.c": [
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "1b-1-1-1-1-gtsum127-1-0-1-000.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-1-1-2-1-eq127-0-0-0-000.c": [
+      "loop-unroll",
+      "irrelevant-code"
+    ],
+    "1b-1-1-2-1-gt127-0-0-0-000.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "1b-1-1-2-2-eq127_eq63-0-0-0-000.c": [
+      "irrelevant-code",
+      "flatten:switch"
+    ],
+    "1b-1-1-2-2-gt127_eq63-0-0-0-000.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "1b-1-1-2-2-gt127_eq63_dep-0-0-0-000.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "1b-1-1-2-2-gt127_gt63_dep-0-0-0-000.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "1b-1-1-2-2-gt85_lt170-0-0-0-000.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "1b-1-2-0-0-dc-2-0-1-000.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "1b-1-2-0-0-dc-2-0-2-000.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-1-2-1-0-dc-1-0-1-000.c": [
+      "loop-unroll",
+      "flatten:indirect-goto"
+    ],
+    "1b-1-2-1-1-eq127-1-0-1-000.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "1b-1-2-1-1-eqsum127_dep-1-0-1-000.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "1b-1-2-1-1-gt127-1-0-1-000.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "1b-1-2-1-1-gtsum127_dep-1-0-1-000.c": [
+      "loop-fission",
+      "flatten:goto"
+    ],
+    "1b-1-2-2-1-eq127-0-0-0-000.c": [
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "1b-1-2-2-1-gt127-0-0-0-000.c": [
+      "loop-unroll",
+      "irrelevant-code"
+    ],
+    "1b-1-2-2-2-gt63_eq127-0-0-0-000.c": [
+      "irrelevant-code",
+      "irrelevant-code"
+    ],
+    "1b-1-2-2-2-gt63_eq127_dep-0-0-0-000.c": [
+      "loop-unroll",
+      "flatten:indirect-goto"
+    ],
+    "1b-1-2-2-2-gt63_gt127-0-0-0-000.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "1b-1-2-2-2-gt63_gt127_dep-0-0-0-000.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "1b-4-1-0-0-dc-1-1-0-000.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-4-1-0-0-dc-2-1-0-000.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "1b-4-1-0-0-dc-2-1-1-000.c": [
+      "loop-fission",
+      "flatten:switch"
+    ],
+    "1b-4-1-1-0-dc-1-1-0-000.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-4-1-1-1-gt127-1-1-0-000.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "1b-4-2-0-0-dc-2-1-1-000.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-4-2-0-0-dc-2-2-0-000.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "1b-4-2-1-0-dc-1-1-0-000.c": [
+      "irrelevant-code",
+      "flatten:indirect-goto"
+    ],
+    "1b-4-2-1-1-gt127-1-1-0-000.c": [
+      "loop-fission",
+      "flatten:switch"
+    ],
+    "16b-1-1-0-0-dc-1-1-0-001.c": [
+      "irrelevant-code",
+      "flatten:call"
+    ],
+    "16b-1-1-0-0-dc-2-1-0-001.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "16b-1-1-0-0-dc-2-1-1-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "16b-1-1-0-0-dc-2-2-0-001.c": [
+      "loop-unroll",
+      "flatten:switch"
+    ],
+    "16b-1-1-1-0-dc-1-1-0-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "16b-1-1-1-1-dc-1-1-0-001.c": [
+      "flatten:switch",
+      "flatten:goto"
+    ],
+    "16b-1-2-0-0-dc-2-1-1-001.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "16b-1-2-0-0-dc-2-2-0-001.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "16b-1-2-1-1-dc-1-1-0-001.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-1-1-0-0-dc-1-0-0-001.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "1b-1-1-0-0-dc-1-0-1-001.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "1b-1-1-0-0-dc-2-0-1-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "1b-1-1-0-0-dc-2-0-2-001.c": [
+      "irrelevant-code",
+      "irrelevant-code"
+    ],
+    "1b-1-1-1-0-dc-0-0-0-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "1b-1-1-1-0-dc-1-0-1-001.c": [
+      "loop-fission",
+      "flatten:call"
+    ],
+    "1b-1-1-1-1-eq127-0-0-0-001.c": [
+      "loop-unroll",
+      "flatten:call"
+    ],
+    "1b-1-1-1-1-eqsum127-1-0-1-001.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "1b-1-1-1-1-gt127-0-0-0-001.c": [
+      "loop-unroll",
+      "irrelevant-code"
+    ],
+    "1b-1-1-1-1-gtsum127-1-0-1-001.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "1b-1-1-2-1-eq127-0-0-0-001.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "1b-1-1-2-1-gt127-0-0-0-001.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-1-1-2-2-eq127_eq63-0-0-0-001.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "1b-1-1-2-2-gt127_eq63-0-0-0-001.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-1-1-2-2-gt127_eq63_dep-0-0-0-001.c": [
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "1b-1-1-2-2-gt127_gt63_dep-0-0-0-001.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-1-1-2-2-gt85_lt170-0-0-0-001.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "1b-1-2-0-0-dc-2-0-1-001.c": [
+      "loop-fission",
+      "flatten:goto"
+    ],
+    "1b-1-2-0-0-dc-2-0-2-001.c": [
+      "loop-unroll",
+      "flatten:indirect-goto"
+    ],
+    "1b-1-2-1-0-dc-1-0-1-001.c": [
+      "flatten:indirect-goto",
+      "flatten:switch"
+    ],
+    "1b-1-2-1-1-eq127-1-0-1-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "1b-1-2-1-1-eqsum127_dep-1-0-1-001.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-1-2-1-1-gt127-1-0-1-001.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "1b-1-2-1-1-gtsum127_dep-1-0-1-001.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "1b-1-2-2-1-eq127-0-0-0-001.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-1-2-2-1-gt127-0-0-0-001.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "1b-1-2-2-2-gt63_eq127-0-0-0-001.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "1b-1-2-2-2-gt63_eq127_dep-0-0-0-001.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "1b-1-2-2-2-gt63_gt127-0-0-0-001.c": [
+      "loop-unroll",
+      "irrelevant-code"
+    ],
+    "1b-1-2-2-2-gt63_gt127_dep-0-0-0-001.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "1b-4-1-0-0-dc-1-1-0-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "1b-4-1-0-0-dc-2-1-0-001.c": [
+      "irrelevant-code",
+      "flatten:switch"
+    ],
+    "1b-4-1-0-0-dc-2-1-1-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "1b-4-1-1-0-dc-1-1-0-001.c": [
+      "irrelevant-code",
+      "flatten:switch"
+    ],
+    "1b-4-1-1-1-gt127-1-1-0-001.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "1b-4-2-0-0-dc-2-1-1-001.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "1b-4-2-0-0-dc-2-2-0-001.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "1b-4-2-1-0-dc-1-1-0-001.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "1b-4-2-1-1-gt127-1-1-0-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ]
+  },
+  "failed_files": [
+    "16b-1-1-0-0-dc-2-1-0-000.c"
+  ]
+}

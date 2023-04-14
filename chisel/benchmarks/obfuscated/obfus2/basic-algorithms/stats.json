@@ -1,0 +1,379 @@
+{
+  "obfuscation_count": {
+    "('block-fission', 'block-fission')": 0,
+    "('block-fission', 'deadcode')": 5,
+    "('block-fission', 'flatten')": 2,
+    "('deadcode', 'block-fission')": 3,
+    "('deadcode', 'deadcode')": 0,
+    "('deadcode', 'flatten')": 2,
+    "('flatten', 'block-fission')": 1,
+    "('flatten', 'deadcode')": 3,
+    "('flatten', 'flatten')": 0,
+    "('irrelevant-code', 'block-fission')": 2,
+    "('irrelevant-code', 'deadcode')": 7,
+    "('irrelevant-code', 'flatten')": 2,
+    "('irrelevant-code', 'irrelevant-code')": 0,
+    "('irrelevant-code', 'loop-fission')": 4,
+    "('irrelevant-code', 'loop-unroll')": 3,
+    "('loop-fission', 'block-fission')": 3,
+    "('loop-fission', 'deadcode')": 4,
+    "('loop-fission', 'flatten')": 4,
+    "('loop-fission', 'irrelevant-code')": 4,
+    "('loop-fission', 'loop-fission')": 6,
+    "('loop-fission', 'loop-unroll')": 4,
+    "('loop-unroll', 'block-fission')": 4,
+    "('loop-unroll', 'deadcode')": 6,
+    "('loop-unroll', 'flatten')": 2,
+    "('loop-unroll', 'irrelevant-code')": 1,
+    "('loop-unroll', 'loop-fission')": 4,
+    "('loop-unroll', 'loop-unroll')": 2
+  },
+  "failed_obfuscation_count": {
+    "('flatten', 'block-fission')": 1,
+    "('flatten', 'flatten')": 2,
+    "('deadcode', 'deadcode')": 5,
+    "('deadcode', 'block-fission')": 2,
+    "('irrelevant-code', 'loop-fission')": 2,
+    "('block-fission', 'flatten')": 1,
+    "('loop-fission', 'irrelevant-code')": 1
+  },
+  "obfuscation_variant_count": {
+    "deadcode": {
+      "call": 12,
+      "bug": 7,
+      "True": 11
+    },
+    "block-fission": {
+      "default": 20
+    },
+    "flatten": {
+      "switch": 3,
+      "call": 2,
+      "indirect-goto": 4,
+      "goto": 7
+    }
+  },
+  "detailed_config": {
+    "armstrong-000.c": [
+      "irrelevant-code",
+      "deadcode:call"
+    ],
+    "binarymult-000.c": [
+      "deadcode:bug",
+      "block-fission:default"
+    ],
+    "binarysearch-000.c": [
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "binarysearchrec-000.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "bubblesort-000.c": [
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "concatstrings-000.c": [
+      "flatten:switch",
+      "deadcode:True"
+    ],
+    "decimaltobinary-000.c": [
+      "loop-unroll",
+      "block-fission:default"
+    ],
+    "decimaltohex-000.c": [
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "decimaltooctal-000.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "factorial-000.c": [
+      "loop-unroll",
+      "flatten:call"
+    ],
+    "factorialrec-000.c": [
+      "deadcode:bug",
+      "block-fission:default"
+    ],
+    "fib-000.c": [
+      "block-fission:default",
+      "flatten:indirect-goto"
+    ],
+    "floyd-000.c": [
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "frequency-000.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "gcdrec-000.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "linearsearch-000.c": [
+      "loop-unroll",
+      "block-fission:default"
+    ],
+    "minmaxarray-000.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "multtable-000.c": [
+      "irrelevant-code",
+      "block-fission:default"
+    ],
+    "numtowords-000.c": [
+      "deadcode:True",
+      "flatten:goto"
+    ],
+    "palindrome-000.c": [
+      "block-fission:default",
+      "deadcode:bug"
+    ],
+    "perfect-000.c": [
+      "loop-fission",
+      "flatten:goto"
+    ],
+    "prime-000.c": [
+      "loop-fission",
+      "deadcode:bug"
+    ],
+    "printinitials-000.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "pyramid-000.c": [
+      "loop-unroll",
+      "block-fission:default"
+    ],
+    "random-000.c": [
+      "irrelevant-code",
+      "flatten:indirect-goto"
+    ],
+    "reverse-000.c": [
+      "deadcode:call",
+      "block-fission:default"
+    ],
+    "romannumerals-000.c": [
+      "loop-unroll",
+      "deadcode:bug"
+    ],
+    "selectionsort-000.c": [
+      "irrelevant-code",
+      "block-fission:default"
+    ],
+    "stringtoASCII-000.c": [
+      "deadcode:True",
+      "flatten:switch"
+    ],
+    "sumrec-000.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "binaryadd-000.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "comparestrings-000.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "gcd-000.c": [
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "insertionsort-000.c": [
+      "flatten:call",
+      "block-fission:default"
+    ],
+    "lcm-000.c": [
+      "loop-unroll",
+      "deadcode:True"
+    ],
+    "quicksort-000.c": [
+      "irrelevant-code",
+      "deadcode:True"
+    ],
+    "vowels-000.c": [
+      "loop-fission",
+      "flatten:goto"
+    ],
+    "anagram-000.c": [
+      "loop-unroll",
+      "deadcode:call"
+    ],
+    "armstrong-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "binarymult-001.c": [
+      "block-fission:default",
+      "deadcode:call"
+    ],
+    "binarysearch-001.c": [
+      "irrelevant-code",
+      "deadcode:call"
+    ],
+    "binarysearchrec-001.c": [
+      "loop-fission",
+      "deadcode:call"
+    ],
+    "bubblesort-001.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "concatstrings-001.c": [
+      "loop-fission",
+      "flatten:goto"
+    ],
+    "decimaltobinary-001.c": [
+      "loop-unroll",
+      "irrelevant-code"
+    ],
+    "decimaltohex-001.c": [
+      "loop-fission",
+      "deadcode:call"
+    ],
+    "decimaltooctal-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "factorial-001.c": [
+      "block-fission:default",
+      "deadcode:call"
+    ],
+    "factorialrec-001.c": [
+      "loop-fission",
+      "deadcode:bug"
+    ],
+    "fib-001.c": [
+      "loop-fission",
+      "flatten:goto"
+    ],
+    "floyd-001.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "frequency-001.c": [
+      "block-fission:default",
+      "flatten:goto"
+    ],
+    "gcdrec-001.c": [
+      "loop-unroll",
+      "deadcode:call"
+    ],
+    "linearsearch-001.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "mergesort-000.c": [
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "mergesort-001.c": [
+      "flatten:switch",
+      "deadcode:True"
+    ],
+    "iofile-000.c": [
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "iofile-001.c": [
+      "flatten:switch",
+      "deadcode:True"
+    ],
+    "minmaxarray-001.c": [
+      "loop-unroll",
+      "deadcode:True"
+    ],
+    "multtable-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "numtowords-001.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "palindrome-001.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "perfect-001.c": [
+      "irrelevant-code",
+      "flatten:switch"
+    ],
+    "prime-001.c": [
+      "irrelevant-code",
+      "deadcode:True"
+    ],
+    "printinitials-001.c": [
+      "block-fission:default",
+      "deadcode:True"
+    ],
+    "pyramid-001.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "random-001.c": [
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "reverse-001.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "romannumerals-001.c": [
+      "irrelevant-code",
+      "deadcode:call"
+    ],
+    "selectionsort-001.c": [
+      "loop-unroll",
+      "block-fission:default"
+    ],
+    "stringtoASCII-001.c": [
+      "loop-unroll",
+      "flatten:indirect-goto"
+    ],
+    "sumrec-001.c": [
+      "loop-unroll",
+      "deadcode:call"
+    ],
+    "binaryadd-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "comparestrings-001.c": [
+      "flatten:goto",
+      "deadcode:True"
+    ],
+    "gcd-001.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "insertionsort-001.c": [
+      "irrelevant-code",
+      "deadcode:True"
+    ],
+    "lcm-001.c": [
+      "irrelevant-code",
+      "deadcode:bug"
+    ],
+    "quicksort-001.c": [
+      "flatten:indirect-goto",
+      "deadcode:call"
+    ],
+    "vowels-001.c": [
+      "block-fission:default",
+      "deadcode:True"
+    ],
+    "anagram-001.c": [
+      "loop-unroll",
+      "loop-fission"
+    ]
+  },
+  "failed_files": []
+}

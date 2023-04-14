@@ -1,0 +1,9 @@
+name: obfus1
+tigress: _tigress_base.yml
+variants:
+- [block-fission]
+- [deadcode]
+- [flatten]
+- [irrelevant-code]
+- [loop-fission]
+- [loop-unroll]

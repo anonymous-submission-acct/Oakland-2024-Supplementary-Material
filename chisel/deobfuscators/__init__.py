@@ -1,0 +1,2 @@
+from deobfuscators.decompositional_deobfuscator import DecompositionalDeobfuscator
+from deobfuscators.enumerative_deobfuscator import EnumerativeDeobfuscator

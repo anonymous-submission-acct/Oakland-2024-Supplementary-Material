@@ -1,0 +1,620 @@
+{
+  "obfuscation_count": {
+    "('block-fission', 'block-fission', 'block-fission')": 0,
+    "('block-fission', 'block-fission', 'deadcode')": 0,
+    "('block-fission', 'block-fission', 'flatten')": 0,
+    "('block-fission', 'deadcode', 'block-fission')": 0,
+    "('block-fission', 'deadcode', 'deadcode')": 0,
+    "('block-fission', 'deadcode', 'flatten')": 3,
+    "('block-fission', 'flatten', 'block-fission')": 0,
+    "('block-fission', 'flatten', 'deadcode')": 1,
+    "('block-fission', 'flatten', 'flatten')": 0,
+    "('block-fission', 'irrelevant-code', 'block-fission')": 0,
+    "('block-fission', 'irrelevant-code', 'deadcode')": 0,
+    "('block-fission', 'irrelevant-code', 'flatten')": 0,
+    "('block-fission', 'loop-fission', 'block-fission')": 0,
+    "('block-fission', 'loop-fission', 'deadcode')": 0,
+    "('block-fission', 'loop-fission', 'flatten')": 0,
+    "('block-fission', 'loop-unroll', 'block-fission')": 0,
+    "('block-fission', 'loop-unroll', 'deadcode')": 0,
+    "('block-fission', 'loop-unroll', 'flatten')": 0,
+    "('deadcode', 'block-fission', 'block-fission')": 0,
+    "('deadcode', 'block-fission', 'deadcode')": 0,
+    "('deadcode', 'block-fission', 'flatten')": 2,
+    "('deadcode', 'deadcode', 'block-fission')": 0,
+    "('deadcode', 'deadcode', 'deadcode')": 0,
+    "('deadcode', 'deadcode', 'flatten')": 0,
+    "('deadcode', 'flatten', 'block-fission')": 0,
+    "('deadcode', 'flatten', 'deadcode')": 0,
+    "('deadcode', 'flatten', 'flatten')": 0,
+    "('deadcode', 'irrelevant-code', 'block-fission')": 0,
+    "('deadcode', 'irrelevant-code', 'deadcode')": 0,
+    "('deadcode', 'irrelevant-code', 'flatten')": 0,
+    "('deadcode', 'loop-fission', 'block-fission')": 0,
+    "('deadcode', 'loop-fission', 'deadcode')": 0,
+    "('deadcode', 'loop-fission', 'flatten')": 0,
+    "('deadcode', 'loop-unroll', 'block-fission')": 0,
+    "('deadcode', 'loop-unroll', 'deadcode')": 0,
+    "('deadcode', 'loop-unroll', 'flatten')": 0,
+    "('flatten', 'block-fission', 'block-fission')": 0,
+    "('flatten', 'block-fission', 'deadcode')": 0,
+    "('flatten', 'block-fission', 'flatten')": 0,
+    "('flatten', 'deadcode', 'block-fission')": 0,
+    "('flatten', 'deadcode', 'deadcode')": 0,
+    "('flatten', 'deadcode', 'flatten')": 0,
+    "('flatten', 'flatten', 'block-fission')": 0,
+    "('flatten', 'flatten', 'deadcode')": 2,
+    "('flatten', 'flatten', 'flatten')": 0,
+    "('flatten', 'irrelevant-code', 'block-fission')": 0,
+    "('flatten', 'irrelevant-code', 'deadcode')": 0,
+    "('flatten', 'irrelevant-code', 'flatten')": 0,
+    "('flatten', 'loop-fission', 'block-fission')": 0,
+    "('flatten', 'loop-fission', 'deadcode')": 0,
+    "('flatten', 'loop-fission', 'flatten')": 0,
+    "('flatten', 'loop-unroll', 'block-fission')": 0,
+    "('flatten', 'loop-unroll', 'deadcode')": 0,
+    "('flatten', 'loop-unroll', 'flatten')": 0,
+    "('irrelevant-code', 'block-fission', 'block-fission')": 0,
+    "('irrelevant-code', 'block-fission', 'deadcode')": 1,
+    "('irrelevant-code', 'block-fission', 'flatten')": 0,
+    "('irrelevant-code', 'deadcode', 'block-fission')": 1,
+    "('irrelevant-code', 'deadcode', 'deadcode')": 0,
+    "('irrelevant-code', 'deadcode', 'flatten')": 0,
+    "('irrelevant-code', 'flatten', 'block-fission')": 0,
+    "('irrelevant-code', 'flatten', 'deadcode')": 0,
+    "('irrelevant-code', 'flatten', 'flatten')": 0,
+    "('irrelevant-code', 'irrelevant-code', 'block-fission')": 1,
+    "('irrelevant-code', 'irrelevant-code', 'deadcode')": 1,
+    "('irrelevant-code', 'irrelevant-code', 'flatten')": 0,
+    "('irrelevant-code', 'irrelevant-code', 'irrelevant-code')": 0,
+    "('irrelevant-code', 'irrelevant-code', 'loop-fission')": 1,
+    "('irrelevant-code', 'irrelevant-code', 'loop-unroll')": 3,
+    "('irrelevant-code', 'loop-fission', 'block-fission')": 2,
+    "('irrelevant-code', 'loop-fission', 'deadcode')": 1,
+    "('irrelevant-code', 'loop-fission', 'flatten')": 2,
+    "('irrelevant-code', 'loop-fission', 'irrelevant-code')": 1,
+    "('irrelevant-code', 'loop-fission', 'loop-fission')": 2,
+    "('irrelevant-code', 'loop-fission', 'loop-unroll')": 0,
+    "('irrelevant-code', 'loop-unroll', 'block-fission')": 1,
+    "('irrelevant-code', 'loop-unroll', 'deadcode')": 0,
+    "('irrelevant-code', 'loop-unroll', 'flatten')": 0,
+    "('irrelevant-code', 'loop-unroll', 'irrelevant-code')": 0,
+    "('irrelevant-code', 'loop-unroll', 'loop-fission')": 1,
+    "('irrelevant-code', 'loop-unroll', 'loop-unroll')": 0,
+    "('loop-fission', 'block-fission', 'block-fission')": 0,
+    "('loop-fission', 'block-fission', 'deadcode')": 0,
+    "('loop-fission', 'block-fission', 'flatten')": 1,
+    "('loop-fission', 'deadcode', 'block-fission')": 1,
+    "('loop-fission', 'deadcode', 'deadcode')": 0,
+    "('loop-fission', 'deadcode', 'flatten')": 1,
+    "('loop-fission', 'flatten', 'block-fission')": 1,
+    "('loop-fission', 'flatten', 'deadcode')": 2,
+    "('loop-fission', 'flatten', 'flatten')": 1,
+    "('loop-fission', 'irrelevant-code', 'block-fission')": 0,
+    "('loop-fission', 'irrelevant-code', 'deadcode')": 0,
+    "('loop-fission', 'irrelevant-code', 'flatten')": 1,
+    "('loop-fission', 'irrelevant-code', 'irrelevant-code')": 1,
+    "('loop-fission', 'irrelevant-code', 'loop-fission')": 1,
+    "('loop-fission', 'irrelevant-code', 'loop-unroll')": 0,
+    "('loop-fission', 'loop-fission', 'block-fission')": 4,
+    "('loop-fission', 'loop-fission', 'deadcode')": 2,
+    "('loop-fission', 'loop-fission', 'flatten')": 1,
+    "('loop-fission', 'loop-fission', 'irrelevant-code')": 3,
+    "('loop-fission', 'loop-fission', 'loop-fission')": 1,
+    "('loop-fission', 'loop-fission', 'loop-unroll')": 0,
+    "('loop-fission', 'loop-unroll', 'block-fission')": 0,
+    "('loop-fission', 'loop-unroll', 'deadcode')": 2,
+    "('loop-fission', 'loop-unroll', 'flatten')": 2,
+    "('loop-fission', 'loop-unroll', 'irrelevant-code')": 0,
+    "('loop-fission', 'loop-unroll', 'loop-fission')": 0,
+    "('loop-fission', 'loop-unroll', 'loop-unroll')": 1,
+    "('loop-unroll', 'block-fission', 'block-fission')": 0,
+    "('loop-unroll', 'block-fission', 'deadcode')": 0,
+    "('loop-unroll', 'block-fission', 'flatten')": 1,
+    "('loop-unroll', 'deadcode', 'block-fission')": 2,
+    "('loop-unroll', 'deadcode', 'deadcode')": 0,
+    "('loop-unroll', 'deadcode', 'flatten')": 0,
+    "('loop-unroll', 'flatten', 'block-fission')": 0,
+    "('loop-unroll', 'flatten', 'deadcode')": 4,
+    "('loop-unroll', 'flatten', 'flatten')": 0,
+    "('loop-unroll', 'irrelevant-code', 'block-fission')": 1,
+    "('loop-unroll', 'irrelevant-code', 'deadcode')": 0,
+    "('loop-unroll', 'irrelevant-code', 'flatten')": 1,
+    "('loop-unroll', 'irrelevant-code', 'irrelevant-code')": 1,
+    "('loop-unroll', 'irrelevant-code', 'loop-fission')": 2,
+    "('loop-unroll', 'irrelevant-code', 'loop-unroll')": 0,
+    "('loop-unroll', 'loop-fission', 'block-fission')": 0,
+    "('loop-unroll', 'loop-fission', 'deadcode')": 1,
+    "('loop-unroll', 'loop-fission', 'flatten')": 0,
+    "('loop-unroll', 'loop-fission', 'irrelevant-code')": 3,
+    "('loop-unroll', 'loop-fission', 'loop-fission')": 0,
+    "('loop-unroll', 'loop-fission', 'loop-unroll')": 2,
+    "('loop-unroll', 'loop-unroll', 'block-fission')": 2,
+    "('loop-unroll', 'loop-unroll', 'deadcode')": 2,
+    "('loop-unroll', 'loop-unroll', 'flatten')": 3,
+    "('loop-unroll', 'loop-unroll', 'irrelevant-code')": 0,
+    "('loop-unroll', 'loop-unroll', 'loop-fission')": 0,
+    "('loop-unroll', 'loop-unroll', 'loop-unroll')": 0
+  },
+  "failed_obfuscation_count": {
+    "('flatten', 'irrelevant-code', 'deadcode')": 3,
+    "('irrelevant-code', 'block-fission', 'flatten')": 1,
+    "('block-fission', 'loop-fission', 'flatten')": 2,
+    "('loop-unroll', 'loop-unroll', 'block-fission')": 1,
+    "('flatten', 'loop-unroll', 'deadcode')": 4,
+    "('flatten', 'loop-fission', 'flatten')": 4,
+    "('flatten', 'deadcode', 'block-fission')": 2,
+    "('irrelevant-code', 'irrelevant-code', 'block-fission')": 1,
+    "('loop-unroll', 'irrelevant-code', 'deadcode')": 1,
+    "('flatten', 'deadcode', 'flatten')": 1,
+    "('flatten', 'irrelevant-code', 'flatten')": 2,
+    "('irrelevant-code', 'deadcode', 'deadcode')": 3,
+    "('block-fission', 'block-fission', 'block-fission')": 2,
+    "('flatten', 'block-fission', 'flatten')": 3,
+    "('block-fission', 'loop-unroll', 'block-fission')": 2,
+    "('block-fission', 'deadcode', 'deadcode')": 2,
+    "('loop-unroll', 'loop-unroll', 'deadcode')": 1,
+    "('flatten', 'deadcode', 'deadcode')": 2,
+    "('loop-fission', 'deadcode', 'deadcode')": 5,
+    "('deadcode', 'flatten', 'deadcode')": 1,
+    "('loop-fission', 'block-fission', 'block-fission')": 3,
+    "('block-fission', 'loop-fission', 'block-fission')": 3,
+    "('flatten', 'loop-unroll', 'flatten')": 2,
+    "('block-fission', 'irrelevant-code', 'deadcode')": 1,
+    "('block-fission', 'irrelevant-code', 'flatten')": 1,
+    "('irrelevant-code', 'loop-unroll', 'deadcode')": 1,
+    "('block-fission', 'loop-unroll', 'deadcode')": 1,
+    "('loop-unroll', 'loop-unroll', 'loop-fission')": 1,
+    "('irrelevant-code', 'flatten', 'block-fission')": 1,
+    "('loop-fission', 'loop-unroll', 'flatten')": 1,
+    "('deadcode', 'irrelevant-code', 'block-fission')": 2,
+    "('deadcode', 'loop-fission', 'block-fission')": 1,
+    "('irrelevant-code', 'loop-fission', 'loop-unroll')": 1,
+    "('flatten', 'block-fission', 'block-fission')": 3,
+    "('flatten', 'irrelevant-code', 'block-fission')": 1,
+    "('loop-unroll', 'flatten', 'flatten')": 1,
+    "('deadcode', 'deadcode', 'block-fission')": 1,
+    "('block-fission', 'irrelevant-code', 'block-fission')": 1,
+    "('deadcode', 'flatten', 'flatten')": 1,
+    "('irrelevant-code', 'loop-fission', 'flatten')": 1,
+    "('deadcode', 'deadcode', 'flatten')": 2,
+    "('loop-fission', 'flatten', 'block-fission')": 1,
+    "('block-fission', 'deadcode', 'block-fission')": 2,
+    "('deadcode', 'loop-unroll', 'block-fission')": 2,
+    "('flatten', 'block-fission', 'deadcode')": 1,
+    "('flatten', 'loop-fission', 'deadcode')": 1,
+    "('deadcode', 'loop-unroll', 'deadcode')": 3,
+    "('flatten', 'loop-unroll', 'block-fission')": 2,
+    "('loop-unroll', 'flatten', 'deadcode')": 1,
+    "('deadcode', 'loop-unroll', 'flatten')": 1,
+    "('deadcode', 'flatten', 'block-fission')": 1,
+    "('loop-unroll', 'deadcode', 'deadcode')": 1,
+    "('deadcode', 'block-fission', 'block-fission')": 1,
+    "('irrelevant-code', 'irrelevant-code', 'loop-fission')": 1,
+    "('loop-unroll', 'irrelevant-code', 'irrelevant-code')": 1,
+    "('irrelevant-code', 'flatten', 'flatten')": 1,
+    "('irrelevant-code', 'deadcode', 'flatten')": 1
+  },
+  "obfuscation_variant_count": {
+    "deadcode": {
+      "call": 8,
+      "bug": 8,
+      "True": 13
+    },
+    "flatten": {
+      "goto": 8,
+      "indirect-goto": 3,
+      "switch": 11,
+      "call": 10
+    },
+    "block-fission": {
+      "default": 25
+    }
+  },
+  "detailed_config": {
+    "armstrong-000.c": [
+      "loop-fission",
+      "deadcode:call",
+      "flatten:goto"
+    ],
+    "binarymult-000.c": [
+      "loop-unroll",
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "binarysearch-000.c": [
+      "loop-fission",
+      "loop-fission",
+      "flatten:goto"
+    ],
+    "binarysearchrec-000.c": [
+      "loop-fission",
+      "flatten:goto",
+      "deadcode:bug"
+    ],
+    "bubblesort-000.c": [
+      "loop-unroll",
+      "flatten:indirect-goto",
+      "deadcode:True"
+    ],
+    "concatstrings-000.c": [
+      "loop-unroll",
+      "flatten:switch",
+      "deadcode:bug"
+    ],
+    "decimaltobinary-000.c": [
+      "loop-fission",
+      "irrelevant-code",
+      "flatten:goto"
+    ],
+    "decimaltohex-000.c": [
+      "loop-fission",
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "decimaltooctal-000.c": [
+      "loop-unroll",
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "factorial-000.c": [
+      "loop-unroll",
+      "deadcode:True",
+      "block-fission:default"
+    ],
+    "factorialrec-000.c": [
+      "loop-unroll",
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "fib-000.c": [
+      "loop-unroll",
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "floyd-000.c": [
+      "loop-unroll",
+      "irrelevant-code",
+      "irrelevant-code"
+    ],
+    "frequency-000.c": [
+      "loop-fission",
+      "loop-unroll",
+      "deadcode:call"
+    ],
+    "gcdrec-000.c": [
+      "loop-fission",
+      "loop-fission",
+      "deadcode:bug"
+    ],
+    "linearsearch-000.c": [
+      "loop-fission",
+      "loop-fission",
+      "loop-fission"
+    ],
+    "minmaxarray-000.c": [
+      "loop-fission",
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "multtable-000.c": [
+      "irrelevant-code",
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "numtowords-000.c": [
+      "loop-unroll",
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "palindrome-000.c": [
+      "loop-unroll",
+      "loop-fission",
+      "deadcode:bug"
+    ],
+    "perfect-000.c": [
+      "loop-unroll",
+      "irrelevant-code",
+      "flatten:call"
+    ],
+    "prime-000.c": [
+      "irrelevant-code",
+      "loop-unroll",
+      "block-fission:default"
+    ],
+    "printinitials-000.c": [
+      "loop-unroll",
+      "loop-unroll",
+      "flatten:switch"
+    ],
+    "pyramid-000.c": [
+      "irrelevant-code",
+      "irrelevant-code",
+      "deadcode:True"
+    ],
+    "random-000.c": [
+      "loop-unroll",
+      "loop-unroll",
+      "deadcode:bug"
+    ],
+    "reverse-000.c": [
+      "loop-unroll",
+      "flatten:call",
+      "deadcode:call"
+    ],
+    "romannumerals-000.c": [
+      "loop-fission",
+      "loop-fission",
+      "deadcode:True"
+    ],
+    "selectionsort-000.c": [
+      "deadcode:True",
+      "block-fission:default",
+      "flatten:switch"
+    ],
+    "stringtoASCII-000.c": [
+      "loop-fission",
+      "flatten:indirect-goto",
+      "flatten:switch"
+    ],
+    "sumrec-000.c": [
+      "irrelevant-code",
+      "irrelevant-code",
+      "block-fission:default"
+    ],
+    "binaryadd-000.c": [
+      "irrelevant-code",
+      "deadcode:call",
+      "block-fission:default"
+    ],
+    "comparestrings-000.c": [
+      "irrelevant-code",
+      "loop-fission",
+      "loop-fission"
+    ],
+    "gcd-000.c": [
+      "irrelevant-code",
+      "loop-fission",
+      "flatten:switch"
+    ],
+    "insertionsort-000.c": [
+      "loop-unroll",
+      "deadcode:call",
+      "block-fission:default"
+    ],
+    "lcm-000.c": [
+      "loop-unroll",
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "quicksort-000.c": [
+      "irrelevant-code",
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "vowels-000.c": [
+      "loop-fission",
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "anagram-000.c": [
+      "loop-unroll",
+      "loop-unroll",
+      "block-fission:default"
+    ],
+    "armstrong-001.c": [
+      "loop-fission",
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "binarymult-001.c": [
+      "loop-unroll",
+      "loop-unroll",
+      "deadcode:True"
+    ],
+    "binarysearch-001.c": [
+      "irrelevant-code",
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "binarysearchrec-001.c": [
+      "loop-unroll",
+      "loop-unroll",
+      "flatten:call"
+    ],
+    "bubblesort-001.c": [
+      "flatten:call",
+      "flatten:switch",
+      "deadcode:True"
+    ],
+    "concatstrings-001.c": [
+      "block-fission:default",
+      "flatten:goto",
+      "deadcode:True"
+    ],
+    "decimaltobinary-001.c": [
+      "loop-unroll",
+      "flatten:call",
+      "deadcode:bug"
+    ],
+    "decimaltohex-001.c": [
+      "loop-unroll",
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "decimaltooctal-001.c": [
+      "loop-fission",
+      "block-fission:default",
+      "flatten:switch"
+    ],
+    "factorial-001.c": [
+      "irrelevant-code",
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "factorialrec-001.c": [
+      "block-fission:default",
+      "deadcode:True",
+      "flatten:goto"
+    ],
+    "fib-001.c": [
+      "deadcode:call",
+      "block-fission:default",
+      "flatten:goto"
+    ],
+    "floyd-001.c": [
+      "loop-fission",
+      "irrelevant-code",
+      "irrelevant-code"
+    ],
+    "frequency-001.c": [
+      "block-fission:default",
+      "deadcode:call",
+      "flatten:switch"
+    ],
+    "gcdrec-001.c": [
+      "loop-fission",
+      "flatten:call",
+      "block-fission:default"
+    ],
+    "linearsearch-001.c": [
+      "loop-unroll",
+      "loop-unroll",
+      "block-fission:default"
+    ],
+    "minmaxarray-001.c": [
+      "irrelevant-code",
+      "loop-fission",
+      "deadcode:call"
+    ],
+    "multtable-001.c": [
+      "irrelevant-code",
+      "loop-fission",
+      "flatten:call"
+    ],
+    "numtowords-001.c": [
+      "block-fission:default",
+      "deadcode:bug",
+      "flatten:switch"
+    ],
+    "palindrome-001.c": [
+      "loop-fission",
+      "deadcode:True",
+      "block-fission:default"
+    ],
+    "perfect-001.c": [
+      "irrelevant-code",
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "prime-001.c": [
+      "irrelevant-code",
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "printinitials-001.c": [
+      "loop-unroll",
+      "irrelevant-code",
+      "block-fission:default"
+    ],
+    "pyramid-001.c": [
+      "irrelevant-code",
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "random-001.c": [
+      "irrelevant-code",
+      "block-fission:default",
+      "deadcode:True"
+    ],
+    "reverse-001.c": [
+      "loop-fission",
+      "flatten:switch",
+      "deadcode:bug"
+    ],
+    "romannumerals-001.c": [
+      "loop-unroll",
+      "loop-unroll",
+      "flatten:goto"
+    ],
+    "selectionsort-001.c": [
+      "irrelevant-code",
+      "loop-fission",
+      "loop-fission"
+    ],
+    "stringtoASCII-001.c": [
+      "loop-fission",
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "sumrec-001.c": [
+      "loop-fission",
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "binaryadd-001.c": [
+      "loop-fission",
+      "loop-unroll",
+      "flatten:call"
+    ],
+    "comparestrings-001.c": [
+      "flatten:call",
+      "flatten:indirect-goto",
+      "deadcode:True"
+    ],
+    "gcd-001.c": [
+      "loop-fission",
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "insertionsort-001.c": [
+      "irrelevant-code",
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "lcm-001.c": [
+      "loop-fission",
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "quicksort-001.c": [
+      "loop-unroll",
+      "block-fission:default",
+      "flatten:switch"
+    ],
+    "vowels-001.c": [
+      "loop-fission",
+      "loop-unroll",
+      "deadcode:True"
+    ],
+    "anagram-001.c": [
+      "loop-fission",
+      "loop-unroll",
+      "flatten:call"
+    ],
+
+    "mergesort-000.c": [
+      "flatten:switch",
+      "irrelevant-code",
+      "deadcode:True"
+    ],
+    "iofile-000.c": [
+      "loop-fission",
+      "irrelevant-code",
+      "loop-fission"
+    ],
+
+    "mergesort-001.c": [
+      "irrelevant-code",
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "iofile-001.c": [
+      "deadcode:True",
+      "loop-unroll",
+      "flatten:switch"
+    ]
+  },
+  "failed_files": [
+  ]
+}

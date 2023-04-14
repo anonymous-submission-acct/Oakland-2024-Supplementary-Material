@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -z ${proc_timeout} ]; then
+    proc_timeout="22m"
+fi
+
+# https://unix.stackexchange.com/questions/57667/why-cant-i-kill-a-timeout-called-from-a-bash-script-with-a-keystroke
+trap 'kill -INT -$pid' INT
+timeout --foreground -k 10 ${proc_timeout} python3 runner.py $* &
+pid=$!
+wait $pid

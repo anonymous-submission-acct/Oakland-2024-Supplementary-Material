@@ -1,0 +1,96 @@
+{
+  "obfuscation_count": {
+    "('block-fission',)": 3,
+    "('deadcode',)": 4,
+    "('flatten',)": 6,
+    "('irrelevant-code',)": 4,
+    "('loop-fission',)": 1,
+    "('loop-unroll',)": 4
+  },
+  "failed_obfuscation_count": {
+    "('irrelevant-code',)": 3
+  },
+  "obfuscation_variant_count": {
+    "flatten": {
+      "switch": 4,
+      "call": 1,
+      "goto": 1
+    },
+    "block-fission": {
+      "default": 3
+    },
+    "deadcode": {
+      "bug": 3,
+      "True": 1
+    }
+  },
+  "detailed_config": {
+    "bkdrhash-000.c": [
+      "flatten:switch"
+    ],
+    "bphash-000.c": [
+      "block-fission:default"
+    ],
+    "dekhash-000.c": [
+      "loop-unroll"
+    ],
+    "djbhash-000.c": [
+      "irrelevant-code"
+    ],
+    "elfhash-000.c": [
+      "deadcode:bug"
+    ],
+    "fnvhash-000.c": [
+      "loop-unroll"
+    ],
+    "jshash-000.c": [
+      "flatten:call"
+    ],
+    "pjwhash-000.c": [
+      "loop-unroll"
+    ],
+    "rshash-000.c": [
+      "loop-fission"
+    ],
+    "sdbmhash-000.c": [
+      "irrelevant-code"
+    ],
+    "bkdrhash-001.c": [
+      "deadcode:bug"
+    ],
+    "bphash-001.c": [
+      "flatten:switch"
+    ],
+    "dekhash-001.c": [
+      "flatten:switch"
+    ],
+    "djbhash-001.c": [
+      "loop-unroll"
+    ],
+    "elfhash-001.c": [
+      "deadcode:bug"
+    ],
+    "fnvhash-001.c": [
+      "irrelevant-code"
+    ],
+    "jshash-001.c": [
+      "flatten:goto"
+    ],
+    "pjwhash-001.c": [
+      "block-fission:default"
+    ],
+    "rshash-001.c": [
+      "deadcode:True"
+    ],
+    "sdbmhash-001.c": [
+      "block-fission:default"
+    ],
+    "nohash-000.c": [
+      "flatten:switch"
+    ],
+    "nohash-001.c": [
+      "irrelevant-code"
+    ]
+  },
+  "failed_files": []
+}

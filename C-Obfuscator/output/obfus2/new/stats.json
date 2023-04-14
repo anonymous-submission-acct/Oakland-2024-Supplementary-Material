@@ -1,0 +1,76 @@
+{
+  "obfuscation_count": {
+    "('block-fission', 'block-fission')": 0,
+    "('block-fission', 'deadcode')": 0,
+    "('block-fission', 'flatten')": 0,
+    "('deadcode', 'block-fission')": 1,
+    "('deadcode', 'deadcode')": 0,
+    "('deadcode', 'flatten')": 0,
+    "('flatten', 'block-fission')": 0,
+    "('flatten', 'deadcode')": 1,
+    "('flatten', 'flatten')": 0,
+    "('irrelevant-code', 'block-fission')": 0,
+    "('irrelevant-code', 'deadcode')": 0,
+    "('irrelevant-code', 'flatten')": 0,
+    "('irrelevant-code', 'irrelevant-code')": 0,
+    "('irrelevant-code', 'loop-fission')": 0,
+    "('irrelevant-code', 'loop-unroll')": 1,
+    "('loop-fission', 'block-fission')": 1,
+    "('loop-fission', 'deadcode')": 0,
+    "('loop-fission', 'flatten')": 0,
+    "('loop-fission', 'irrelevant-code')": 1,
+    "('loop-fission', 'loop-fission')": 0,
+    "('loop-fission', 'loop-unroll')": 0,
+    "('loop-unroll', 'block-fission')": 1,
+    "('loop-unroll', 'deadcode')": 0,
+    "('loop-unroll', 'flatten')": 0,
+    "('loop-unroll', 'irrelevant-code')": 0,
+    "('loop-unroll', 'loop-fission')": 0,
+    "('loop-unroll', 'loop-unroll')": 0
+  },
+  "failed_obfuscation_count": {
+    "('irrelevant-code', 'deadcode')": 1,
+    "('flatten', 'block-fission')": 1,
+    "('flatten', 'flatten')": 1,
+    "('deadcode', 'deadcode')": 1
+  },
+  "obfuscation_variant_count": {
+    "deadcode": {
+      "bug": 1,
+      "True": 1
+    },
+    "block-fission": {
+      "default": 3
+    },
+    "flatten": {
+      "switch": 1
+    }
+  },
+  "detailed_config": {
+    "nohash-000.c": [
+      "deadcode:bug",
+      "block-fission:default"
+    ],
+    "mergesort-000.c": [
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "iofile-000.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "nohash-001.c": [
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "mergesort-001.c": [
+      "flatten:switch",
+      "deadcode:True"
+    ],
+    "iofile-001.c": [
+      "loop-unroll",
+      "block-fission:default"
+    ]
+  },
+  "failed_files": []
+}

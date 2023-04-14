@@ -1,0 +1,144 @@
+typedef void *__builtin_va_list;
+unsigned int OBF_FUNC(unsigned int input) {
+  int __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ + 1;
+  unsigned int localStaticState[2];
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ - 302;
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ + 302;
+  unsigned int _induction1_0_2;
+  unsigned int _index0_4;
+  if (((83 * 543) - __RANDVAR__59584135557324963878__) < 17) {
+    int __RANDVAR__61170754295812368077__ = __RANDVAR__61170754295812368077__ + 1;
+  } else {
+    if (__RANDVAR__59584135557324963878__ < (__RANDVAR__59584135557324963878__ + __RANDVAR__59584135557324963878__)) {
+      __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ - 659;
+      __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ + 659;
+    } else {
+      int __RANDVAR__11022954956833268926__ = 166;
+    }
+  }
+  unsigned int _induction3_2_2;
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ + 977;
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ - 977;
+  unsigned int _index2_2;
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ + 369;
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ - 369;
+  unsigned int _induction5_4_2;
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ - 450;
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ + 450;
+  unsigned int _index4_0;
+  int __RANDVAR__90352975549411310608__ = __RANDVAR__59584135557324963878__;
+  unsigned int _induction7_6_2;
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ + 635;
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ - 635;
+  unsigned int _index6_0;
+  localStaticState[0UL] = (input + 1050607161UL) - 662284716U;
+  localStaticState[1UL] = input + (574658530UL + localStaticState[0UL]);
+  _induction1_0_2 = 0UL;
+  _index0_4 = 0UL;
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ + 178;
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ - 178;
+  while (_index0_4 < 4UL) {
+    localStaticState[((int)localStaticState[0UL]) % 2UL] = localStaticState[1UL] - localStaticState[0UL];
+    _induction1_0_2 = (_induction1_0_2 + 1UL) % 2UL;
+    __RANDVAR__90352975549411310608__ = __RANDVAR__90352975549411310608__ + 696;
+    __RANDVAR__90352975549411310608__ = __RANDVAR__90352975549411310608__ - 696;
+    _index0_4 += 2UL;
+  }
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ + 776;
+  __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ - 776;
+  if ((localStaticState[1UL] >> 3U) & 1) {
+    __RANDVAR__90352975549411310608__ = __RANDVAR__90352975549411310608__ + 373;
+    __RANDVAR__90352975549411310608__ = __RANDVAR__90352975549411310608__ - 373;
+    _induction3_2_2 = 0UL;
+    int __RANDVAR__72937065583311869732__ = __RANDVAR__90352975549411310608__;
+    _index2_2 = 0UL;
+    __RANDVAR__90352975549411310608__ = __RANDVAR__90352975549411310608__ + 125;
+    __RANDVAR__90352975549411310608__ = __RANDVAR__90352975549411310608__ - 125;
+    while (_index2_2 < 2UL) {
+      __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ + 600;
+      __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ - 600;
+      if ((localStaticState[0UL] >> 4U) & 1) {
+        if (((__RANDVAR__90352975549411310608__ + 502) - __RANDVAR__59584135557324963878__) < ((980 - __RANDVAR__72937065583311869732__) + __RANDVAR__59584135557324963878__)) {
+          __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ + 885;
+          __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ - 885;
+        } else {
+          int __RANDVAR__16780236826659230358__ = __RANDVAR__72937065583311869732__;
+        }
+        _induction5_4_2 = 0UL;
+        _index4_0 = 0UL;
+        __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ - 877;
+        __RANDVAR__59584135557324963878__ = __RANDVAR__59584135557324963878__ + 877;
+        while (_index4_0 < 0UL) {
+          _induction5_4_2 = (_induction5_4_2 + 1UL) % 2UL;
+          if (__RANDVAR__59584135557324963878__ < 65) {
+            __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ - 913;
+            __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ + 913;
+          } else {
+            __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ - 380;
+            __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ + 380;
+          }
+          _index4_0 += 2UL;
+        }
+        if (!((localStaticState[0UL] >> 1U) & 1)) {
+          if ((localStaticState[0UL] >> 3U) & 1) {
+            int __RANDVAR__92961407900634872300__ = 54 * __RANDVAR__92961407900634872300__;
+            if (__RANDVAR__92961407900634872300__ < __RANDVAR__72937065583311869732__) {
+              if (__RANDVAR__90352975549411310608__ < __RANDVAR__72937065583311869732__) {
+                int __RANDVAR__13963287773033038669__ = __RANDVAR__90352975549411310608__;
+              } else {
+                int __RANDVAR__53832367617406739031__ = __RANDVAR__72937065583311869732__;
+                if ((__RANDVAR__90352975549411310608__ * 855) < 994) {
+                  int __RANDVAR__60551842196281411656__ = (__RANDVAR__59584135557324963878__ + __RANDVAR__53832367617406739031__) - __RANDVAR__60551842196281411656__;
+                } else {
+                  int __RANDVAR__35604402363465994155__ = __RANDVAR__35604402363465994155__ + 1;
+                }
+              }
+            } else {
+              int __RANDVAR__59364875347510986849__ = __RANDVAR__90352975549411310608__;
+            }
+            localStaticState[1UL] = localStaticState[_index2_2] + localStaticState[_induction3_2_2];
+            localStaticState[1UL] = localStaticState[0UL] + localStaticState[_index2_2];
+          }
+        }
+      } else if (!((localStaticState[0UL] >> 2U) & 1)) {
+        _induction7_6_2 = 0UL;
+        __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ - 225;
+        __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ + 225;
+        _index6_0 = 0UL;
+        while (_index6_0 < 0UL) {
+          localStaticState[_induction3_2_2] = localStaticState[_index2_2] * localStaticState[_induction3_2_2 % 2UL];
+          localStaticState[((int)localStaticState[1UL]) % 2UL] = localStaticState[_index6_0] + localStaticState[_induction7_6_2];
+          __RANDVAR__90352975549411310608__ = __RANDVAR__90352975549411310608__ - 455;
+          __RANDVAR__90352975549411310608__ = __RANDVAR__90352975549411310608__ + 455;
+          _induction7_6_2 = (_induction7_6_2 + 1UL) % 2UL;
+          int __RANDVAR__28806286814666617546__ = (__RANDVAR__28806286814666617546__ * __RANDVAR__72937065583311869732__) - (__RANDVAR__72937065583311869732__ * 958);
+          _index6_0 += 2UL;
+        }
+      }
+      _induction3_2_2 = (_induction3_2_2 + 1UL) % 2UL;
+      if (__RANDVAR__90352975549411310608__ < 332) {
+        __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ + 152;
+        __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ - 152;
+      } else {
+        __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ - 189;
+        __RANDVAR__72937065583311869732__ = __RANDVAR__72937065583311869732__ + 189;
+      }
+      _index2_2++;
+    }
+  }
+  int __RANDVAR__92961841945453844936__ = 930;
+  if (__RANDVAR__59584135557324963878__ < 144) {
+    int __RANDVAR__70826426550039534983__ = 332 - 993;
+  } else {
+    __RANDVAR__90352975549411310608__ = __RANDVAR__90352975549411310608__ - 640;
+    __RANDVAR__90352975549411310608__ = __RANDVAR__90352975549411310608__ + 640;
+  }
+  return (localStaticState[0UL] - localStaticState[1UL]) + 433909550;
+}
+int main(int argc, char **argv) {
+  unsigned int a;
+  a = strtol(argv[1], 0L, 10);
+  return OBF_FUNC(a);
+}
+// variants: irrelevant-code
+// expanded variants: irrelevant-code

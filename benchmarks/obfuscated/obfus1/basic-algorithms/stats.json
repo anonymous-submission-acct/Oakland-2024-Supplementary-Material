@@ -1,0 +1,274 @@
+{
+  "obfuscation_count": {
+    "('block-fission',)": 12,
+    "('deadcode',)": 13,
+    "('flatten',)": 14,
+    "('irrelevant-code',)": 13,
+    "('loop-fission',)": 8,
+    "('loop-unroll',)": 22
+  },
+  "failed_obfuscation_count": {
+    "('deadcode',)": 1,
+    "('irrelevant-code',)": 2,
+    "('loop-fission',)": 1
+  },
+  "obfuscation_variant_count": {
+    "flatten": {
+      "switch": 6,
+      "call": 2,
+      "goto": 3,
+      "indirect-goto": 2
+    },
+    "block-fission": {
+      "default": 13
+    },
+    "deadcode": {
+      "bug": 4,
+      "True": 7,
+      "call": 2
+    }
+  },
+  "detailed_config": {
+    "armstrong-000.c": [
+      "flatten:switch"
+    ],
+    "binarymult-000.c": [
+      "block-fission:default"
+    ],
+    "binarysearch-000.c": [
+      "loop-unroll"
+    ],
+    "binarysearchrec-000.c": [
+      "irrelevant-code"
+    ],
+    "bubblesort-000.c": [
+      "deadcode:bug"
+    ],
+    "concatstrings-000.c": [
+      "loop-unroll"
+    ],
+    "decimaltobinary-000.c": [
+      "irrelevant-code"
+    ],
+    "decimaltohex-000.c": [
+      "flatten:call"
+    ],
+    "decimaltooctal-000.c": [
+      "loop-unroll"
+    ],
+    "factorial-000.c": [
+      "loop-fission"
+    ],
+    "factorialrec-000.c": [
+      "irrelevant-code"
+    ],
+    "fib-000.c": [
+      "deadcode:bug"
+    ],
+    "floyd-000.c": [
+      "flatten:switch"
+    ],
+    "frequency-000.c": [
+      "flatten:switch"
+    ],
+    "gcdrec-000.c": [
+      "loop-unroll"
+    ],
+    "linearsearch-000.c": [
+      "irrelevant-code"
+    ],
+    "minmaxarray-000.c": [
+      "flatten:goto"
+    ],
+    "multtable-000.c": [
+      "irrelevant-code"
+    ],
+    "numtowords-000.c": [
+      "block-fission:default"
+    ],
+    "palindrome-000.c": [
+      "deadcode:True"
+    ],
+    "perfect-000.c": [
+      "block-fission:default"
+    ],
+    "prime-000.c": [
+      "block-fission:default"
+    ],
+    "printinitials-000.c": [
+      "loop-unroll"
+    ],
+    "pyramid-000.c": [
+      "flatten:goto"
+    ],
+    "random-000.c": [
+      "loop-unroll"
+    ],
+    "reverse-000.c": [
+      "loop-unroll"
+    ],
+    "romannumerals-000.c": [
+      "irrelevant-code"
+    ],
+    "selectionsort-000.c": [
+      "block-fission:default"
+    ],
+    "stringtoASCII-000.c": [
+      "loop-fission"
+    ],
+    "sumrec-000.c": [
+      "loop-fission"
+    ],
+    "binaryadd-000.c": [
+      "flatten:call"
+    ],
+    "comparestrings-000.c": [
+      "deadcode:True"
+    ],
+    "gcd-000.c": [
+      "block-fission:default"
+    ],
+    "insertionsort-000.c": [
+      "loop-unroll"
+    ],
+    "lcm-000.c": [
+      "loop-unroll"
+    ],
+    "quicksort-000.c": [
+      "deadcode:call"
+    ],
+    "vowels-000.c": [
+      "loop-unroll"
+    ],
+    "anagram-000.c": [
+      "block-fission:default"
+    ],
+    "armstrong-001.c": [
+      "irrelevant-code"
+    ],
+    "binarymult-001.c": [
+      "block-fission:default"
+    ],
+    "binarysearch-001.c": [
+      "loop-fission"
+    ],
+    "binarysearchrec-001.c": [
+      "loop-fission"
+    ],
+    "bubblesort-001.c": [
+      "loop-unroll"
+    ],
+    "concatstrings-001.c": [
+      "block-fission:default"
+    ],
+    "decimaltobinary-001.c": [
+      "deadcode:call"
+    ],
+    "decimaltohex-001.c": [
+      "block-fission:default"
+    ],
+    "decimaltooctal-001.c": [
+      "loop-unroll"
+    ],
+    "factorial-001.c": [
+      "block-fission:default"
+    ],
+    "factorialrec-001.c": [
+      "loop-unroll"
+    ],
+    "fib-001.c": [
+      "deadcode:True"
+    ],
+    "floyd-001.c": [
+      "flatten:switch"
+    ],
+    "frequency-001.c": [
+      "deadcode:True"
+    ],
+    "gcdrec-001.c": [
+      "flatten:switch"
+    ],
+    "linearsearch-001.c": [
+      "loop-fission"
+    ],
+    "minmaxarray-001.c": [
+      "loop-unroll"
+    ],
+    "multtable-001.c": [
+      "irrelevant-code"
+    ],
+    "numtowords-001.c": [
+      "deadcode:True"
+    ],
+    "palindrome-001.c": [
+      "flatten:goto"
+    ],
+    "perfect-001.c": [
+      "irrelevant-code"
+    ],
+    "prime-001.c": [
+      "loop-unroll"
+    ],
+    "printinitials-001.c": [
+      "loop-unroll"
+    ],
+    "pyramid-001.c": [
+      "block-fission:default"
+    ],
+    "random-001.c": [
+      "deadcode:True"
+    ],
+    "reverse-001.c": [
+      "deadcode:True"
+    ],
+    "romannumerals-001.c": [
+      "irrelevant-code"
+    ],
+    "selectionsort-001.c": [
+      "loop-unroll"
+    ],
+    "stringtoASCII-001.c": [
+      "loop-unroll"
+    ],
+    "sumrec-001.c": [
+      "flatten:indirect-goto"
+    ],
+    "binaryadd-001.c": [
+      "loop-unroll"
+    ],
+    "comparestrings-001.c": [
+      "loop-unroll"
+    ],
+    "gcd-001.c": [
+      "flatten:indirect-goto"
+    ],
+    "insertionsort-001.c": [
+      "loop-fission"
+    ],
+    "lcm-001.c": [
+      "irrelevant-code"
+    ],
+    "quicksort-001.c": [
+      "deadcode:bug"
+    ],
+    "vowels-001.c": [
+      "loop-fission"
+    ],
+    "anagram-001.c": [
+      "flatten:switch"
+    ],
+    "mergesort-000.c": [
+      "block-fission:default"
+    ],
+    "iofile-000.c": [
+      "loop-unroll"
+    ],
+    "mergesort-001.c": [
+      "deadcode:bug"
+    ],
+    "iofile-001.c": [
+      "loop-unroll"
+    ]
+  },
+  "failed_files": []
+}

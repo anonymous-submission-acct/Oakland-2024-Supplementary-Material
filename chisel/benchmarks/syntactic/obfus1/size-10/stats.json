@@ -1,0 +1,85 @@
+{
+  "obfuscation_count": {
+    "('block-fission',)": 0,
+    "('deadcode',)": 0,
+    "('flatten',)": 7,
+    "('irrelevant-code',)": 1,
+    "('loop-fission',)": 3,
+    "('loop-unroll',)": 9
+  },
+  "failed_obfuscation_count": {
+    "('block-fission',)": 6,
+    "('irrelevant-code',)": 7,
+    "('deadcode',)": 5
+  },
+  "obfuscation_variant_count": {
+    "flatten": {
+      "switch": 3,
+      "call": 2,
+      "goto": 2
+    }
+  },
+  "detailed_config": {
+    "10-1-000.c": [
+      "flatten:switch"
+    ],
+    "10-2-000.c": [
+      "loop-unroll"
+    ],
+    "10-3-000.c": [
+      "loop-unroll"
+    ],
+    "10-4-000.c": [
+      "flatten:call"
+    ],
+    "10-5-000.c": [
+      "loop-unroll"
+    ],
+    "10-6-000.c": [
+      "loop-fission"
+    ],
+    "10-7-000.c": [
+      "flatten:switch"
+    ],
+    "10-8-000.c": [
+      "flatten:switch"
+    ],
+    "10-9-000.c": [
+      "loop-unroll"
+    ],
+    "10-10-000.c": [
+      "irrelevant-code"
+    ],
+    "10-1-001.c": [
+      "flatten:goto"
+    ],
+    "10-2-001.c": [
+      "loop-unroll"
+    ],
+    "10-3-001.c": [
+      "flatten:goto"
+    ],
+    "10-4-001.c": [
+      "loop-unroll"
+    ],
+    "10-5-001.c": [
+      "loop-unroll"
+    ],
+    "10-6-001.c": [
+      "loop-fission"
+    ],
+    "10-7-001.c": [
+      "loop-fission"
+    ],
+    "10-8-001.c": [
+      "flatten:call"
+    ],
+    "10-9-001.c": [
+      "loop-unroll"
+    ],
+    "10-10-001.c": [
+      "loop-unroll"
+    ]
+  },
+  "failed_files": []
+}

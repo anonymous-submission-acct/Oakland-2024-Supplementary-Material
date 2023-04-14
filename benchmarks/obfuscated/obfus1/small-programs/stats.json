@@ -1,0 +1,313 @@
+{
+  "obfuscation_count": {
+    "('block-fission',)": 0,
+    "('deadcode',)": 0,
+    "('flatten',)": 25,
+    "('irrelevant-code',)": 11,
+    "('loop-fission',)": 22,
+    "('loop-unroll',)": 38
+  },
+  "failed_obfuscation_count": {
+    "('block-fission',)": 25,
+    "('deadcode',)": 24
+  },
+  "obfuscation_variant_count": {
+    "flatten": {
+      "switch": 10,
+      "call": 8,
+      "goto": 5,
+      "indirect-goto": 2
+    }
+  },
+  "detailed_config": {
+    "16b-1-1-0-0-dc-1-1-0-000.c": [
+      "flatten:switch"
+    ],
+    "16b-1-1-0-0-dc-2-1-0-000.c": [
+      "loop-unroll"
+    ],
+    "16b-1-1-0-0-dc-2-1-1-000.c": [
+      "loop-unroll"
+    ],
+    "16b-1-1-0-0-dc-2-2-0-000.c": [
+      "flatten:call"
+    ],
+    "16b-1-1-1-0-dc-1-1-0-000.c": [
+      "loop-unroll"
+    ],
+    "16b-1-1-1-1-dc-1-1-0-000.c": [
+      "loop-fission"
+    ],
+    "16b-1-2-0-0-dc-2-1-1-000.c": [
+      "flatten:switch"
+    ],
+    "16b-1-2-0-0-dc-2-2-0-000.c": [
+      "flatten:switch"
+    ],
+    "16b-1-2-1-1-dc-1-1-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-0-0-dc-1-0-0-000.c": [
+      "irrelevant-code"
+    ],
+    "1b-1-1-0-0-dc-1-0-1-000.c": [
+      "flatten:goto"
+    ],
+    "1b-1-1-0-0-dc-2-0-1-000.c": [
+      "irrelevant-code"
+    ],
+    "1b-1-1-0-0-dc-2-0-2-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-1-0-dc-0-0-0-000.c": [
+      "flatten:goto"
+    ],
+    "1b-1-1-1-0-dc-1-0-1-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-1-1-eq127-0-0-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-1-1-eqsum127-1-0-1-000.c": [
+      "loop-fission"
+    ],
+    "1b-1-1-1-1-gt127-0-0-0-000.c": [
+      "loop-fission"
+    ],
+    "1b-1-1-1-1-gtsum127-1-0-1-000.c": [
+      "flatten:call"
+    ],
+    "1b-1-1-2-1-eq127-0-0-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-2-1-gt127-0-0-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-2-2-eq127_eq63-0-0-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-2-2-gt127_eq63-0-0-0-000.c": [
+      "loop-fission"
+    ],
+    "1b-1-1-2-2-gt127_eq63_dep-0-0-0-000.c": [
+      "loop-fission"
+    ],
+    "1b-1-1-2-2-gt127_gt63_dep-0-0-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-2-2-gt85_lt170-0-0-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-2-0-0-dc-2-0-1-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-2-0-0-dc-2-0-2-000.c": [
+      "flatten:switch"
+    ],
+    "1b-1-2-1-0-dc-1-0-1-000.c": [
+      "flatten:switch"
+    ],
+    "1b-1-2-1-1-eq127-1-0-1-000.c": [
+      "loop-fission"
+    ],
+    "1b-1-2-1-1-eqsum127_dep-1-0-1-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-2-1-1-gt127-1-0-1-000.c": [
+      "irrelevant-code"
+    ],
+    "1b-1-2-1-1-gtsum127_dep-1-0-1-000.c": [
+      "flatten:goto"
+    ],
+    "1b-1-2-2-1-eq127-0-0-0-000.c": [
+      "irrelevant-code"
+    ],
+    "1b-1-2-2-1-gt127-0-0-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-2-2-2-gt63_eq127-0-0-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-2-2-2-gt63_eq127_dep-0-0-0-000.c": [
+      "irrelevant-code"
+    ],
+    "1b-1-2-2-2-gt63_gt127-0-0-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-1-2-2-2-gt63_gt127_dep-0-0-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-4-1-0-0-dc-1-1-0-000.c": [
+      "flatten:indirect-goto"
+    ],
+    "1b-4-1-0-0-dc-2-1-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-4-1-0-0-dc-2-1-1-000.c": [
+      "irrelevant-code"
+    ],
+    "1b-4-1-1-0-dc-1-1-0-000.c": [
+      "loop-unroll"
+    ],
+    "1b-4-1-1-1-gt127-1-1-0-000.c": [
+      "flatten:indirect-goto"
+    ],
+    "1b-4-2-0-0-dc-2-1-1-000.c": [
+      "loop-fission"
+    ],
+    "1b-4-2-0-0-dc-2-2-0-000.c": [
+      "irrelevant-code"
+    ],
+    "1b-4-2-1-0-dc-1-1-0-000.c": [
+      "loop-fission"
+    ],
+    "1b-4-2-1-1-gt127-1-1-0-000.c": [
+      "loop-fission"
+    ],
+    "16b-1-1-0-0-dc-1-1-0-001.c": [
+      "flatten:switch"
+    ],
+    "16b-1-1-0-0-dc-2-1-0-001.c": [
+      "loop-fission"
+    ],
+    "16b-1-1-0-0-dc-2-1-1-001.c": [
+      "loop-unroll"
+    ],
+    "16b-1-1-0-0-dc-2-2-0-001.c": [
+      "loop-unroll"
+    ],
+    "16b-1-1-1-0-dc-1-1-0-001.c": [
+      "irrelevant-code"
+    ],
+    "16b-1-1-1-1-dc-1-1-0-001.c": [
+      "irrelevant-code"
+    ],
+    "16b-1-2-0-0-dc-2-1-1-001.c": [
+      "flatten:call"
+    ],
+    "16b-1-2-0-0-dc-2-2-0-001.c": [
+      "loop-fission"
+    ],
+    "16b-1-2-1-1-dc-1-1-0-001.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-0-0-dc-1-0-0-001.c": [
+      "flatten:goto"
+    ],
+    "1b-1-1-0-0-dc-1-0-1-001.c": [
+      "flatten:call"
+    ],
+    "1b-1-1-0-0-dc-2-0-1-001.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-0-0-dc-2-0-2-001.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-1-0-dc-0-0-0-001.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-1-0-dc-1-0-1-001.c": [
+      "flatten:switch"
+    ],
+    "1b-1-1-1-1-eq127-0-0-0-001.c": [
+      "loop-fission"
+    ],
+    "1b-1-1-1-1-eqsum127-1-0-1-001.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-1-1-gt127-0-0-0-001.c": [
+      "flatten:goto"
+    ],
+    "1b-1-1-1-1-gtsum127-1-0-1-001.c": [
+      "flatten:switch"
+    ],
+    "1b-1-1-2-1-eq127-0-0-0-001.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-2-1-gt127-0-0-0-001.c": [
+      "loop-fission"
+    ],
+    "1b-1-1-2-2-eq127_eq63-0-0-0-001.c": [
+      "irrelevant-code"
+    ],
+    "1b-1-1-2-2-gt127_eq63-0-0-0-001.c": [
+      "flatten:call"
+    ],
+    "1b-1-1-2-2-gt127_eq63_dep-0-0-0-001.c": [
+      "loop-unroll"
+    ],
+    "1b-1-1-2-2-gt127_gt63_dep-0-0-0-001.c": [
+      "loop-fission"
+    ],
+    "1b-1-1-2-2-gt85_lt170-0-0-0-001.c": [
+      "irrelevant-code"
+    ],
+    "1b-1-2-0-0-dc-2-0-1-001.c": [
+      "flatten:call"
+    ],
+    "1b-1-2-0-0-dc-2-0-2-001.c": [
+      "loop-unroll"
+    ],
+    "1b-1-2-1-0-dc-1-0-1-001.c": [
+      "loop-fission"
+    ],
+    "1b-1-2-1-1-eq127-1-0-1-001.c": [
+      "loop-unroll"
+    ],
+    "1b-1-2-1-1-eqsum127_dep-1-0-1-001.c": [
+      "flatten:call"
+    ],
+    "1b-1-2-1-1-gt127-1-0-1-001.c": [
+      "loop-unroll"
+    ],
+    "1b-1-2-1-1-gtsum127_dep-1-0-1-001.c": [
+      "flatten:call"
+    ],
+    "1b-1-2-2-1-eq127-0-0-0-001.c": [
+      "loop-fission"
+    ],
+    "1b-1-2-2-1-gt127-0-0-0-001.c": [
+      "loop-fission"
+    ],
+    "1b-1-2-2-2-gt63_eq127-0-0-0-001.c": [
+      "loop-unroll"
+    ],
+    "1b-1-2-2-2-gt63_eq127_dep-0-0-0-001.c": [
+      "loop-fission"
+    ],
+    "1b-1-2-2-2-gt63_gt127-0-0-0-001.c": [
+      "loop-unroll"
+    ],
+    "1b-1-2-2-2-gt63_gt127_dep-0-0-0-001.c": [
+      "loop-unroll"
+    ],
+    "1b-4-1-0-0-dc-1-1-0-001.c": [
+      "loop-fission"
+    ],
+    "1b-4-1-0-0-dc-2-1-0-001.c": [
+      "loop-fission"
+    ],
+    "1b-4-1-0-0-dc-2-1-1-001.c": [
+      "loop-unroll"
+    ],
+    "1b-4-1-1-0-dc-1-1-0-001.c": [
+      "flatten:switch"
+    ],
+    "1b-4-1-1-1-gt127-1-1-0-001.c": [
+      "loop-unroll"
+    ],
+    "1b-4-2-0-0-dc-2-1-1-001.c": [
+      "flatten:switch"
+    ],
+    "1b-4-2-0-0-dc-2-2-0-001.c": [
+      "loop-unroll"
+    ],
+    "1b-4-2-1-0-dc-1-1-0-001.c": [
+      "loop-fission"
+    ],
+    "1b-4-2-1-1-gt127-1-1-0-001.c": [
+      "loop-fission"
+    ]
+  },
+  "failed_files": []
+}

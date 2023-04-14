@@ -1,0 +1,13 @@
+hypothesis>=6.39.4
+pycparser>=2.21
+dill
+tabulate
+pytest>=7.2.0
+pytest-order
+pyyaml
+editdistance
+pytest-timeout
+pydantic
+pydantic-yaml
+tqdm
+matplotlib

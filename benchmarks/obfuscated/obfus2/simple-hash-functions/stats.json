@@ -1,0 +1,149 @@
+{
+  "obfuscation_count": {
+    "('block-fission', 'block-fission')": 0,
+    "('block-fission', 'deadcode')": 1,
+    "('block-fission', 'flatten')": 1,
+    "('deadcode', 'block-fission')": 2,
+    "('deadcode', 'deadcode')": 0,
+    "('deadcode', 'flatten')": 0,
+    "('flatten', 'block-fission')": 0,
+    "('flatten', 'deadcode')": 2,
+    "('flatten', 'flatten')": 0,
+    "('irrelevant-code', 'block-fission')": 0,
+    "('irrelevant-code', 'deadcode')": 0,
+    "('irrelevant-code', 'flatten')": 0,
+    "('irrelevant-code', 'irrelevant-code')": 0,
+    "('irrelevant-code', 'loop-fission')": 0,
+    "('irrelevant-code', 'loop-unroll')": 1,
+    "('loop-fission', 'block-fission')": 3,
+    "('loop-fission', 'deadcode')": 1,
+    "('loop-fission', 'flatten')": 1,
+    "('loop-fission', 'irrelevant-code')": 0,
+    "('loop-fission', 'loop-fission')": 0,
+    "('loop-fission', 'loop-unroll')": 1,
+    "('loop-unroll', 'block-fission')": 3,
+    "('loop-unroll', 'deadcode')": 1,
+    "('loop-unroll', 'flatten')": 1,
+    "('loop-unroll', 'irrelevant-code')": 0,
+    "('loop-unroll', 'loop-fission')": 1,
+    "('loop-unroll', 'loop-unroll')": 1
+  },
+  "failed_obfuscation_count": {
+    "('irrelevant-code', 'deadcode')": 1,
+    "('irrelevant-code', 'loop-fission')": 1,
+    "('irrelevant-code', 'irrelevant-code')": 1,
+    "('flatten', 'flatten')": 1,
+    "('loop-fission', 'irrelevant-code')": 3,
+    "('deadcode', 'deadcode')": 2,
+    "('irrelevant-code', 'block-fission')": 1,
+    "('block-fission', 'block-fission')": 1,
+    "('deadcode', 'flatten')": 1
+  },
+  "obfuscation_variant_count": {
+    "block-fission": {
+      "default": 10
+    },
+    "flatten": {
+      "indirect-goto": 2,
+      "switch": 1,
+      "call": 1,
+      "goto": 1
+    },
+    "deadcode": {
+      "call": 3,
+      "True": 1,
+      "bug": 3
+    }
+  },
+  "detailed_config": {
+    "bkdrhash-000.c": [
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "bphash-000.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "dekhash-000.c": [
+      "flatten:indirect-goto",
+      "deadcode:call"
+    ],
+    "djbhash-000.c": [
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "elfhash-000.c": [
+      "flatten:switch",
+      "deadcode:True"
+    ],
+    "fnvhash-000.c": [
+      "loop-unroll",
+      "block-fission:default"
+    ],
+    "jshash-000.c": [
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "pjwhash-000.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "rshash-000.c": [
+      "loop-unroll",
+      "flatten:call"
+    ],
+    "sdbmhash-000.c": [
+      "deadcode:bug",
+      "block-fission:default"
+    ],
+    "bkdrhash-001.c": [
+      "block-fission:default",
+      "flatten:indirect-goto"
+    ],
+    "bphash-001.c": [
+      "loop-fission",
+      "block-fission:default"
+    ],
+    "dekhash-001.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "djbhash-001.c": [
+      "loop-unroll",
+      "block-fission:default"
+    ],
+    "elfhash-001.c": [
+      "deadcode:bug",
+      "block-fission:default"
+    ],
+    "fnvhash-001.c": [
+      "loop-unroll",
+      "block-fission:default"
+    ],
+    "jshash-001.c": [
+      "loop-unroll",
+      "deadcode:call"
+    ],
+    "pjwhash-001.c": [
+      "loop-fission",
+      "deadcode:call"
+    ],
+    "rshash-001.c": [
+      "block-fission:default",
+      "deadcode:bug"
+    ],
+    "sdbmhash-001.c": [
+      "loop-fission",
+      "flatten:goto"
+    ],
+    "nohash-000.c": [
+      "irrelevant-code",
+      "deadcode:call"
+    ],
+    "nohash-001.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ]
+  },
+  "failed_files": []
+}

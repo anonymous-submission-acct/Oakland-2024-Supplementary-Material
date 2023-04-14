@@ -1,0 +1,141 @@
+{
+  "obfuscation_count": {
+    "('block-fission', 'block-fission')": 0,
+    "('block-fission', 'deadcode')": 0,
+    "('block-fission', 'flatten')": 0,
+    "('deadcode', 'block-fission')": 0,
+    "('deadcode', 'deadcode')": 0,
+    "('deadcode', 'flatten')": 0,
+    "('flatten', 'block-fission')": 0,
+    "('flatten', 'deadcode')": 0,
+    "('flatten', 'flatten')": 0,
+    "('irrelevant-code', 'block-fission')": 0,
+    "('irrelevant-code', 'deadcode')": 0,
+    "('irrelevant-code', 'flatten')": 0,
+    "('irrelevant-code', 'irrelevant-code')": 0,
+    "('irrelevant-code', 'loop-fission')": 2,
+    "('irrelevant-code', 'loop-unroll')": 1,
+    "('loop-fission', 'block-fission')": 0,
+    "('loop-fission', 'deadcode')": 0,
+    "('loop-fission', 'flatten')": 2,
+    "('loop-fission', 'irrelevant-code')": 4,
+    "('loop-fission', 'loop-fission')": 2,
+    "('loop-fission', 'loop-unroll')": 3,
+    "('loop-unroll', 'block-fission')": 0,
+    "('loop-unroll', 'deadcode')": 0,
+    "('loop-unroll', 'flatten')": 2,
+    "('loop-unroll', 'irrelevant-code')": 0,
+    "('loop-unroll', 'loop-fission')": 2,
+    "('loop-unroll', 'loop-unroll')": 2
+  },
+  "failed_obfuscation_count": {
+    "('irrelevant-code', 'deadcode')": 3,
+    "('irrelevant-code', 'loop-fission')": 3,
+    "('loop-fission', 'block-fission')": 3,
+    "('flatten', 'deadcode')": 4,
+    "('irrelevant-code', 'irrelevant-code')": 2,
+    "('flatten', 'flatten')": 1,
+    "('deadcode', 'deadcode')": 1,
+    "('irrelevant-code', 'block-fission')": 5,
+    "('loop-unroll', 'block-fission')": 3,
+    "('deadcode', 'block-fission')": 4,
+    "('block-fission', 'deadcode')": 3,
+    "('block-fission', 'block-fission')": 1,
+    "('deadcode', 'flatten')": 4,
+    "('loop-unroll', 'deadcode')": 3,
+    "('loop-fission', 'deadcode')": 2,
+    "('irrelevant-code', 'flatten')": 1,
+    "('irrelevant-code', 'loop-unroll')": 2,
+    "('flatten', 'block-fission')": 2
+  },
+  "obfuscation_variant_count": {
+    "flatten": {
+      "call": 2,
+      "indirect-goto": 1,
+      "goto": 1
+    }
+  },
+  "detailed_config": {
+    "5-1-000.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "5-2-000.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "5-3-000.c": [
+      "irrelevant-code",
+      "loop-unroll"
+    ],
+    "5-4-000.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "5-5-000.c": [
+      "loop-unroll",
+      "flatten:call"
+    ],
+    "5-6-000.c": [
+      "loop-fission",
+      "flatten:indirect-goto"
+    ],
+    "5-7-000.c": [
+      "loop-fission",
+      "flatten:call"
+    ],
+    "5-8-000.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "5-9-000.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "5-10-000.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "5-1-001.c": [
+      "loop-unroll",
+      "loop-fission"
+    ],
+    "5-2-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "5-3-001.c": [
+      "loop-fission",
+      "irrelevant-code"
+    ],
+    "5-4-001.c": [
+      "loop-unroll",
+      "flatten:goto"
+    ],
+    "5-5-001.c": [
+      "loop-unroll",
+      "loop-unroll"
+    ],
+    "5-6-001.c": [
+      "loop-fission",
+      "loop-fission"
+    ],
+    "5-7-001.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ],
+    "5-8-001.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "5-9-001.c": [
+      "loop-fission",
+      "loop-unroll"
+    ],
+    "5-10-001.c": [
+      "irrelevant-code",
+      "loop-fission"
+    ]
+  },
+  "failed_files": []
+}

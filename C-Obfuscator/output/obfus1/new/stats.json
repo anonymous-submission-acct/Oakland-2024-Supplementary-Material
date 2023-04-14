@@ -1,0 +1,43 @@
+{
+  "obfuscation_count": {
+    "('block-fission',)": 1,
+    "('deadcode',)": 1,
+    "('flatten',)": 1,
+    "('irrelevant-code',)": 1,
+    "('loop-fission',)": 0,
+    "('loop-unroll',)": 2
+  },
+  "failed_obfuscation_count": {},
+  "obfuscation_variant_count": {
+    "flatten": {
+      "switch": 1
+    },
+    "block-fission": {
+      "default": 1
+    },
+    "deadcode": {
+      "bug": 1
+    }
+  },
+  "detailed_config": {
+    "nohash-000.c": [
+      "flatten:switch"
+    ],
+    "mergesort-000.c": [
+      "block-fission:default"
+    ],
+    "iofile-000.c": [
+      "loop-unroll"
+    ],
+    "nohash-001.c": [
+      "irrelevant-code"
+    ],
+    "mergesort-001.c": [
+      "deadcode:bug"
+    ],
+    "iofile-001.c": [
+      "loop-unroll"
+    ]
+  },
+  "failed_files": []
+}
